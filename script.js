@@ -1,37 +1,3 @@
-// Função para abrir o Lightbox
-function openLightbox(src) {
-    const modal = document.getElementById("lightbox-modal");
-    const img = document.getElementById("lightbox-img");
-    
-    // Define a imagem e o caption
-    img.src = src;
-    
-    // Exibe o modal
-    modal.style.display = "block";
-}
-
-// Função para fechar o Lightbox
-function closeLightbox() {
-    const modal = document.getElementById("lightbox-modal");
-    modal.style.display = "none";
-}
-
-// Event Listener: Adiciona o clique a todas as imagens da galeria
-document.addEventListener('DOMContentLoaded', () => {
-    const triggers = document.querySelectorAll('.lightbox-trigger');
-
-    triggers.forEach(trigger => {
-        trigger.addEventListener('click', (e) => {
-            e.preventDefault(); // Impede o link de navegar para outra página
-            
-            // Pega o caminho da imagem do atributo 'data-src'
-            const imgSrc = trigger.getAttribute('data-src');
-            
-            // Chama a função para abrir o lightbox
-            openLightbox(imgSrc);
-        });
-    });
-});
 let slideIndex = 1;
 showSlides(slideIndex);
 
