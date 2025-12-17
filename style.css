@@ -41,7 +41,7 @@ body {
 
 @media (max-width: 768px) {
     .logo img {
-        max-width: 200px; /* Tamanho controlado */
+        max-width: 500px; /* Tamanho controlado */
         height: auto;
     }
 }
