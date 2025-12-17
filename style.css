@@ -27,10 +27,10 @@ body {
 /* Header (Hero Section) */
 .hero {
     background-color: var(--color-secondary);
-    color: var(--color-secondary);
-    padding: 2% 0;
+    color: var(--color-text-light); /* Texto branco para dar leitura */
+    padding: 40px 0;
     text-align: center;
-    border-bottom: 5px solid var(--color-secondary);
+    border-bottom: 5px solid var(--color-primary); /* Troquei secondary por primary para destaque */
 }
 
 .logo {
@@ -40,11 +40,13 @@ body {
 }
 
 @media (max-width: 768px) {
-    .logo{
-        height: 300px;
+    .logo img {
+        max-width: 200px; /* Tamanho controlado */
+        height: auto;
     }
-    
 }
+    
+
 .logo-text {
     background-color: var(--color-secondary);
     color: var(--color-primary);
